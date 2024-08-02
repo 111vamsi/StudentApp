@@ -1,0 +1,14 @@
+<!-- <h1>Say Hello ! {{ title }} {{ todayDate | date : "medium" }}</h1>
+<app-home></app-home> -->
+
+<!-- <app-student></app-student> -->
+<main>
+  <header>
+    <ul>
+      <li><a [routerLink]="['/home']">Home</a></li>
+      <li><a [routerLink]="['/students']">Student</a></li>
+      <li><a [routerLink]="['/pincode-search']">Pin Codes Search</a></li>
+    </ul>
+  </header>
+  <router-outlet />
+</main>

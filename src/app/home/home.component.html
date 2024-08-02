@@ -1,0 +1,16 @@
+<section>
+  <form>
+    <input type="text" placeholder="Filter by city" />
+    <button class="primary" type="button">Search</button>
+  </form>
+  <li>
+    <ul *ngFor="let city of cities">
+      <ng-container *ngIf="city.id === 22">
+        <span style="color: red">{{ city.name }}</span>
+      </ng-container>
+      <ng-container *ngIf="city.id !== 22">
+        <a href="#"><img [src]="city.picture" />{{ city.name }} </a>
+      </ng-container>
+    </ul>
+  </li>
+</section>
